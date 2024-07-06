@@ -4,37 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Gate Building Materials TR LLC SP</title>
+
+    <!-- Tailwind Css -->
     <link rel="stylesheet" href="static/css/tailwind.css">
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="static/css/flag-icons.min.css">
+
+
+    <!-- Google Translate Functions -->
+    <script type="text/javascript">
+
+        // Init Google Translate
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+
+        // Translate Based On Button
+        function translatePage(language) {
+            var googleTranslateElement = document.querySelector('.goog-te-combo');
+            if (googleTranslateElement) {
+                googleTranslateElement.value = language;
+                googleTranslateElement.dispatchEvent(new Event('change'));
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
 </head>
 <body>
-    <header>
-        <h1>Smart Gate Building Materials TR LLC SP</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to our building supply store!</h2>
-            <p>We're your go-to place for everything you need to build, remodel, or fix things around your home. You can find us in Zubarah, Khor Fakkan, Sharjah Emirate, UAE. We've got a wide range of tools, electrical supplies, plumbing gear, construction materials, and hardware items. Whether you're a pro or just tackling a DIY project, we've got what you need. Come visit us and let's get your project started!</p>
-        </section>
-        <section>
-            <h3>Store Hours</h3>
-            <p>Monday-Thursday, Saturday-Sunday: 07:00-13:00, 16:00-21:00<br>Friday: 07:00-12:00, 16:00-21:00</p>
-        </section>
-        <section>
-            <h3>Contact Us</h3>
-            <p>Store Number: +971503343786<br>Landline: +971925565300<br>Email: smartgatebldng@gmail.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Smart Gate Building Materials TR LLC SP</p>
-    </footer>
+    <div class="flex flex-row w-full justify-between shadow items-center px-8">
+        <div>
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/"><img style="width: 160px; height: 66px;" src="/static/images/Logo Artboardv2.png"></a>
+        </div>
+        <div class="text-2xl relative">
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
+            <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
+            <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
+            <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+            <div hidden id="google_translate_element"></div>
+        </div>
+    </div>
 </body>
 </html>
