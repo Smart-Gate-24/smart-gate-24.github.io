@@ -4,21 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Smart Gate Building Materials TR LLC SP</title>
+
+    <!-- Tailwind Css -->
     <link rel="stylesheet" href="static/css/tailwind.css">
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="static/css/flag-icons.min.css">
+
+
+    <!-- Google Translate Functions -->
+    <script type="text/javascript">
+
+        // Init Google Translate
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+
+        // Translate Based On Button
+        function translatePage(language) {
+            var googleTranslateElement = document.querySelector('.goog-te-combo');
+            if (googleTranslateElement) {
+                googleTranslateElement.value = language;
+                googleTranslateElement.dispatchEvent(new Event('change'));
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
 </head>
 <body>
-    <header>
-        <h1>Smart Gate Building Materials TR LLC SP</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="flex flex-row w-full justify-between shadow items-center px-8">
+        <div>
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/"><img style="width: 160px; height: 66px;" src="/static/images/Logo Artboardv2.png"></a>
+        </div>
+        <div class="text-2xl relative">
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
+            <a class='text-blue-600 hover:text-blue-800 visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
+            <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
+            <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
+            <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+            <div hidden id="google_translate_element"></div>
+        </div>
+    </div>
+
+    <h1 class="text-center text-3xl">Smart Gate Building Materials TR LLC SP</h1> 
+    <div class="space-y-2 py-6 shadow-sm">
+        
+        <div class="flex justify-around">
+                <a class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" href="/">Home</a></li>
+                <a class='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50' href="/about">About Us</a>
+                <a class='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50' href="/products">Products</a>
+                <a class='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50' href="/contact">Contact Us</a>
+          </div>
+    </div>
     <main>
         <section>
             <h2>Our Products</h2>
