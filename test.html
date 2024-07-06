@@ -1,39 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
   
-    <!-- Tailwind Css -->
-    <link rel="stylesheet" href="static/css/tailwind.css">
+  <!-- Tailwind Css -->
+  <link rel="stylesheet" href="static/css/tailwind.css">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
-    <!-- Flag Icons -->
-    <link rel="stylesheet" href="static/css/flag-icons.min.css">
+  <!-- Flag Icons -->
+  <link rel="stylesheet" href="static/css/flag-icons.min.css">
 
-    
-    <!-- Google Translate Functions -->
-    <script type="text/javascript">
+  
+  <!-- Google Translate Functions -->
+  <script type="text/javascript">
 
-      // Init Google Translate
-      function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-      }
+    // Init Google Translate
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
 
-      // Translate Based On Button
-      function translatePage(language) {
-          var googleTranslateElement = document.querySelector('.goog-te-combo');
-          if (googleTranslateElement) {
-              googleTranslateElement.value = language;
-              googleTranslateElement.dispatchEvent(new Event('change'));
-          }
-      }
+    // Translate Based On Button
+    function translatePage(language) {
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            googleTranslateElement.value = language;
+            googleTranslateElement.dispatchEvent(new Event('change'));
+        }
+    }
   </script>
 
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
+
 </head>
 <body>
-  
   <div class="flex justify-between">
     <div>
         <a href="/"><img style="width: 160px; height: 66px;" src="static/images/Logo Artboardv2.png"></a>
@@ -47,7 +50,7 @@
         <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
         <div hidden id="google_translate_element"></div>
     </div>
-</div>
+  </div>
   <div>
     <h1 class="text-3xl font-bold underline">Smart Gate Building Materials TR LLC SP</h1>
     <ul>
@@ -114,3 +117,5 @@
   </footer>
 </body>
 </html>
+
+  
