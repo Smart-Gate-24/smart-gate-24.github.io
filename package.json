@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build:css": "tailwind build ./static/css/tailwind.css -o ./static/css/tailwind.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "flag-icon-css": "^4.1.7"
+  }
+}
