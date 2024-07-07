@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Smart Gate Building Materials TR LLC SP</title>
+  
+  <!-- Tailwind Css -->
+  <link rel="stylesheet" href="static/css/tailwind.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+  <!-- Flag Icons -->
+  <link rel="stylesheet" href="static/css/flag-icons.min.css">
+
+  <!-- Google Translate Functions -->
+  <script type="text/javascript">
+
+      // Init Google Translate
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+
+      // Translate Based On Button
+      function translatePage(language) {
+          var googleTranslateElement = document.querySelector('.goog-te-combo');
+          if (googleTranslateElement) {
+              googleTranslateElement.value = language;
+              googleTranslateElement.dispatchEvent(new Event('change'));
+          }
+      }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Google AdSense Code-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4112191445833206"
+   crossorigin="anonymous"></script>
+  
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1P0SSZ9FMJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1P0SSZ9FMJ');
+</script>
+
+<body>
+    <div class="flex flex-row w-full justify-between shadow items-center px-8 bg-white">
+        <div>
+            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/"><img style="width: 160px; height: 66px;" src="/static/images/Logo Artboardv2.png"></a>
+        </div>
+        <div class="text-2xl relative">
+            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
+            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
+            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
+            <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
+            <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
+            <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+            <div hidden id="google_translate_element"></div>
+        </div>
+    </div>
+  
+</body>
+</html>
