@@ -60,9 +60,14 @@
             <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
             <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
             <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
-            <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
-            <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
-            <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+            <span class="absolute -top-0.5 right-3 bg-blue text-white text-xs text-center w-4 h-4 rounded-full">0</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <div class="text-xs absolute -bottom-3.5 left-full">
+                <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
+                <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
+                <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+            </div>
             <div hidden id="google_translate_element"></div>
         </div>
     </div>
