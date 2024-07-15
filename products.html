@@ -8,13 +8,13 @@
     <title>Products - Smart Gate Building Materials TR LLC SP</title>
 
     <!-- Tailwind Css -->
-    <link rel="stylesheet" href="static/css/tailwind.css">
+    <link rel="stylesheet" href="/static/css/tailwind.css">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Flag Icons -->
-    <link rel="stylesheet" href="static/css/flag-icons.min.css">
+    <link rel="stylesheet" href="/static/css/flag-icons.min.css">
 
 
     <!-- Google Translate Functions -->
@@ -53,21 +53,13 @@
 </script>
 
 <body class="bg-gray-200">
-    <div class="flex flex-row w-full justify-between shadow items-center px-8 bg-white">
+
+    <div class="flex flex-row w-full shadow items-center pb-2 pt-2 px-8 bg-white dark:bg-gray-900">
         <div>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/"><img style="width: 160px; height: 66px;" src="/static/images/Logo Artboardv2.png"></a>
+            <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/"><img style="width: 320px; " src="/static/images/Logo Artboard v3 dark.png"></a>
         </div>
-        <div class="text-2xl relative">
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
-            <span class="absolute -top-0.5 right-3 bg-blue text-white text-xs text-center w-4 h-4 rounded-full">0</span>
-            <span>&nbsp;</span>
-            <span>&nbsp;</span>
-            <div class="text-xs absolute -bottom-3.5 left-full">
-                <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
-                <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
-                <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+        <div class="shadow-sm text-left justify-evenly text-gray-900 dark:text-sg-blue flex flex-row transition-all">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             </div>
             <div hidden id="google_translate_element"></div>
         </div>
