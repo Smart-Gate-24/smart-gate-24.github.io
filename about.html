@@ -19,6 +19,9 @@
     <!-- Flag Icons -->
     <link rel="stylesheet" href="/static/css/flag-icons.min.css">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
 
     <!-- Google Translate Functions -->
     <script type="text/javascript">
@@ -156,15 +159,26 @@
             </button>
         </a>
     </div>
+
+    <!-- Im Carousel/Banner -->
+    <div class="owl-carousel owl-theme pt-2 pb-2">
+        <div class="item" style="height:540px"><a href="https://g.page/r/CYF1hU83gwevEBM/review"><img src="https://lh3.googleusercontent.com/p/AF1QipPzOhFxH3OuLtiEEEmjQo0XaIy6YBjFCC83D3Qz=s1360-w1360-h1020"></a></div>
+        <div class="item" style="width: 720px; height:540px"><a href="https://g.page/r/CYF1hU83gwevEBM/review"><img src="/static/images/banner-bg.png"></a></div>
+        <div class="item" style="width: 1080px;"><a class="object-cover" href="https://g.page/r/CYF1hU83gwevEBM/review"><img src="/static/images/review_banner.png"></a></div>
+        <div class="item" style="width: 540px; height:540px;"><a href="https://g.page/r/CYF1hU83gwevEBM/review"><img src="/static/images/ext 1.jpg"></a></div>
+        <div class="item" style="width: 820px; height:540px;"><a href="https://g.page/r/CYF1hU83gwevEBM/review"><img src="/static/images/logo 5x7.jpg"></a></div>
+        <div class="item" style="width: 820px; height:540px;"><a href="https://g.page/r/CYF1hU83gwevEBM/review"><img src="/static/images/Family 1.jpg"></a></div>
+    </div>
+
     <main>
-        <section>
+        <section class="my-5">
             <h2 class="font-bold">About Smart Gate Building Materials TR LLC SP</h2>
             <p>At Smart Gate Building Materials TR LLC SP, we're committed to providing high-quality building supplies to our customers. Our store, located in Zubarah, Khor Fakkan, Sharjah Emirate, UAE, opened in February 2024. Since then, we've become the trusted source for professional contractors and DIY enthusiasts alike.</p>
-            <h3>Our Mission</h3>
+            <h3 class="text-lg">Our Mission</h3>
             <p>To empower our customers with innovative building solutions, high-quality materials, and exceptional service.</p>
-            <h3>CEO</h3>
+            <h3 class="text-lg">CEO: </h3>
             <p>Ahammed Shareef</p>
-            <h3>Our Values</h3>
+            <h3 class="text-lg">Our Values</h3>
             <ul>
                 <li>Quality: We offer only the best products to ensure the success of your projects.</li>
                 <li>Service: Our knowledgeable staff is here to help you find what you need.</li>
@@ -288,5 +302,42 @@
             </div>
         </div>
       </footer>
+
+      <!-- Jquery -->
+      <script src="static/js/jquery.min.js"></script>
+    
+      <!-- Owl Carousel -->
+      <script src="static/js/owl.carousel.min.js"></script>
+      
+      <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            loop:true,
+            autoplay: true,
+            autoWidth:true,
+            merge:true,
+            autoplayHoverPause:true,
+            autoplayTimeout:4000,
+            margin:10,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    mergeFit:true,
+                    items:3
+                },
+                1000:{
+                    mergeFit:false,
+                    items:5
+                }
+            }
+        })
+      </script>
+    
 </body>
 </html>
