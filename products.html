@@ -16,6 +16,9 @@
     <!-- Flag Icons -->
     <link rel="stylesheet" href="/static/css/flag-icons.min.css">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
 
     <!-- Google Translate Functions -->
     <script type="text/javascript">
@@ -152,6 +155,16 @@
             </button>
         </a>
     </div>
+
+    <!-- Im Carousel/Banner -->
+    <div class="owl-carousel owl-theme pt-2 pb-2">
+        <div class="item" style="width: 740px; height:540px"><a href="https://www.google.com/maps/uv?pb=!1s0x3ef4490034948a7b%3A0xaf0783374f857581!5sSmart%20Gate%20Building%20Materials%20TR%20LLC%20SP!15sCgIYEg&imagekey=!1e10!2sAF1QipPSvwQyM9Ub7kBVdOqBusYGa5xtc7w9tV2k5XSA"><img src="/static/images/banner-bg.png"></a></div>
+        <div class="item" style="width: 540px; height:540px;"><a href="https://www.google.com/maps/uv?pb=!1s0x3ef4490034948a7b%3A0xaf0783374f857581!5sSmart%20Gate%20Building%20Materials%20TR%20LLC%20SP!15sCgIYEg&imagekey=!1e10!2sAF1QipPSvwQyM9Ub7kBVdOqBusYGa5xtc7w9tV2k5XSA"><img src="/static/images/taps1.jpg"></a></div>
+        <div class="item" style="width: 460px; height:540px;"><a href="https://www.google.com/maps/uv?pb=!1s0x3ef4490034948a7b%3A0xaf0783374f857581!5sSmart%20Gate%20Building%20Materials%20TR%20LLC%20SP!15sCgIYEg&imagekey=!1e10!2sAF1QipPSvwQyM9Ub7kBVdOqBusYGa5xtc7w9tV2k5XSA"><img src="/static/images/shathaf1.jpg"></a></div>
+        <div class="item" style="width: 540px; height:540px;"><a href="https://www.google.com/maps/uv?pb=!1s0x3ef4490034948a7b%3A0xaf0783374f857581!5sSmart%20Gate%20Building%20Materials%20TR%20LLC%20SP!15sCgIYEg&imagekey=!1e10!2sAF1QipPSvwQyM9Ub7kBVdOqBusYGa5xtc7w9tV2k5XSA"><img src="/static/images/tap1.jpg"></a></div>
+        <div class="item" style="width: 540px; height:540px;"><a href="https://www.google.com/maps/uv?pb=!1s0x3ef4490034948a7b%3A0xaf0783374f857581!5sSmart%20Gate%20Building%20Materials%20TR%20LLC%20SP!15sCgIYEg&imagekey=!1e10!2sAF1QipPSvwQyM9Ub7kBVdOqBusYGa5xtc7w9tV2k5XSA"><img src="/static/images/tiles1.jpg"></a></div>
+    </div>
+
             <ul class="list-disc list-inside">
                 <li>Floor Tiles</li>
                 <li>Wall Tiles</li>
@@ -275,5 +288,43 @@
             </div>
         </div>
       </footer>
+
+
+      <!-- Jquery -->
+      <script src="static/js/jquery.min.js"></script>
+    
+      <!-- Owl Carousel -->
+      <script src="static/js/owl.carousel.min.js"></script>
+      
+      <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            loop:true,
+            autoplay: true,
+            autoWidth:true,
+            merge:true,
+            autoplayHoverPause:true,
+            autoplayTimeout:4000,
+            margin:10,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    mergeFit:true,
+                    items:3
+                },
+                1000:{
+                    mergeFit:false,
+                    items:5
+                }
+            }
+        })
+      </script>
+    
 </body>
 </html>
