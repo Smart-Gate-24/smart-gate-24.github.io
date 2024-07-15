@@ -12,7 +12,7 @@
     <title>Smart Gate Building Materials - Quality Supplies in Khor Fakkan</title>
 
     <!-- icon -->
-    <link rel="shortcut icon" href="static/images/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/images/logo.ico" type="image/x-icon">
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="/static/css/tailwind.css">
@@ -86,22 +86,93 @@
 
     <div class="flex flex-row w-full shadow items-center pb-2 pt-2 px-8 bg-white dark:bg-gray-900">
         <div>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/"><img style="width: 160px; height: 66px;" src="/static/images/Logo Artboardv2.png"></a>
+            <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/"><img style="width: 320px; " src="/static/images/Logo Artboard v3 dark.png"></a>
         </div>
-        <div class="text-2xl relative">
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
-            <span class="absolute -top-0.5 right-3 bg-blue text-white text-xs text-center w-4 h-4 rounded-full">0</span>
-            <span>&nbsp;</span>
-            <span>&nbsp;</span>
-            <div class="text-xs absolute -bottom-3.5 left-full">
-                <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
-                <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
-                <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+        <div class="shadow-sm text-left justify-evenly text-gray-900 dark:text-sg-blue flex flex-row transition-all">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class="font-mono rounded-lg px-3 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red" href="/">Home</a>
             </div>
-            <div hidden id="google_translate_element"></div>
+            <span class="z-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/about">About Us</a>
+            </div>
+            <span class="z-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="group">
+                <a class='font-mono rounded-lg px-3 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red transition-all' href="/products">Products <span class="text-xs"><i class="hover:animate-bounce fa fa-arrow-down"></i></span></a>
+                <div class="scale-0 mt-2 opacity-90 transition-all ease-in-out delay-200 rounded-lg bg-gray-100 group-hover:scale-100 w-1/2 min-h-80 z-10 absolute -m-80">
+                    
+                    <div class="px-4 text-gray-800">
+                        <h3>Tools</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Hand Tools</li>
+                            <li>Power Tools</li>
+                            <li>Accessories</li>
+                        </ul>
+                        <h3>Electrical Supplies</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Wiring and Cables</li>
+                            <li>Switches and Sockets</li>
+                            <li>Lighting Solutions</li>
+                        </ul>
+                        <h3>Plumbing Gear</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Pipes and Fittings</li>
+                            <li>Valves and Faucets</li>
+                            <li>Plumbing Accessories</li>
+                        </ul>
+                        <h3>Construction Materials</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Cement and Concrete</li>
+                            <li>Bricks and Blocks</li>
+                            <li>Insulation Materials</li>
+                        </ul>
+                        <h3>Hardware</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Fasteners</li>
+                            <li>Hinges and Locks</li>
+                            <li>Building Hardware</li>
+                        </ul>
+                        <h3>Sanitary Products</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Bathroom Fixtures</li>
+                            <li>Sanitary Ware</li>
+                            <li>Plumbing Accessories</li>
+                        </ul>
+                        <h3>Tiles</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Floor Tiles</li>
+                            <li>Wall Tiles</li>
+                            <li>Decorative Tiles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/contact">Contact Us</a>
+            </div>
         </div>
+        <div class="text-2xl relative right-0 flex-1">
+            <div class="user-contents absolute right-0">
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span class="absolute -top-0.5 right-3 bg-sg-blue text-white text-xs text-center w-4 h-4 rounded-full">0</span>
+            </div>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+        </div>
+        
+        <div class="text-sm absolute -right-0 w-7">
+            <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
+            <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
+            <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+        </div>
+        <div hidden id="google_translate_element"></div>
+    </div>
     </div>
 
     <p class="text-center text-3xl font-serif">Smart Gate Building Materials TR LLC SP</p> 
@@ -241,6 +312,43 @@
         </div>
     </div>
   </footer>
+
+
+  <!-- Jquery -->
+  <script src="static/js/jquery.min.js"></script>
+
+  <!-- Owl Carousel -->
+  <script src="static/js/owl.carousel.min.js"></script>
   
+  <script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+    });
+
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        loop:true,
+        autoplay: true,
+        autoWidth:true,
+        merge:true,
+        autoplayHoverPause:true,
+        autoplayTimeout:4000,
+        margin:10,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                mergeFit:true,
+                items:3
+            },
+            1000:{
+                mergeFit:false,
+                items:5
+            }
+        }
+    })
+  </script>
+
 </body>
 </html>

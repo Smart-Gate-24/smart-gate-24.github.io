@@ -52,9 +52,75 @@
 </script>
 
 <body>
-    <div class="flex flex-row w-full justify-between shadow items-center px-8 bg-white">
+
+    <div class="flex flex-row w-full shadow items-center pb-2 pt-2 px-8 bg-white dark:bg-gray-900">
         <div>
-            <a class='text-sky-600 hover:text-blue visited:text-purple-600' href="/"><img style="width: 160px; height: 66px;" src="/static/images/Logo Artboardv2.png"></a>
+            <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/"><img style="width: 320px; " src="/static/images/Logo Artboard v3 dark.png"></a>
+        </div>
+        <div class="shadow-sm text-left justify-evenly text-gray-900 dark:text-sg-blue flex flex-row transition-all">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class="font-mono rounded-lg px-3 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red" href="/">Home</a>
+            </div>
+            <span class="z-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/about">About Us</a>
+            </div>
+            <span class="z-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="group">
+                <a class='font-mono rounded-lg px-3 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red transition-all' href="/products">Products <span class="text-xs"><i class="hover:animate-bounce fa fa-arrow-down"></i></span></a>
+                <div class="scale-0 mt-2 opacity-90 transition-all ease-in-out delay-200 rounded-lg bg-gray-100 group-hover:scale-100 w-1/2 min-h-80 z-10 absolute -m-80">
+                    
+                    <div class="px-4 text-gray-800">
+                        <h3>Tools</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Hand Tools</li>
+                            <li>Power Tools</li>
+                            <li>Accessories</li>
+                        </ul>
+                        <h3>Electrical Supplies</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Wiring and Cables</li>
+                            <li>Switches and Sockets</li>
+                            <li>Lighting Solutions</li>
+                        </ul>
+                        <h3>Plumbing Gear</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Pipes and Fittings</li>
+                            <li>Valves and Faucets</li>
+                            <li>Plumbing Accessories</li>
+                        </ul>
+                        <h3>Construction Materials</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Cement and Concrete</li>
+                            <li>Bricks and Blocks</li>
+                            <li>Insulation Materials</li>
+                        </ul>
+                        <h3>Hardware</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Fasteners</li>
+                            <li>Hinges and Locks</li>
+                            <li>Building Hardware</li>
+                        </ul>
+                        <h3>Sanitary Products</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Bathroom Fixtures</li>
+                            <li>Sanitary Ware</li>
+                            <li>Plumbing Accessories</li>
+                        </ul>
+                        <h3>Tiles</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Floor Tiles</li>
+                            <li>Wall Tiles</li>
+                            <li>Decorative Tiles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/contact">Contact Us</a>
+            </div>
         </div>
         <div class="text-2xl relative right-0 flex-1">
             <div class="user-contents absolute right-0">
@@ -72,6 +138,18 @@
         <div class="text-sm absolute -right-0 w-7">
             <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
             <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
+            <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
+        </div>
+        <div hidden id="google_translate_element"></div>
+    </div>
+
+    <!-- Floating Whatsapp -->
+    <div class="fixed z-20 top-1/2 right-4 -translate-y-1/2">
+        <a href="https://wa.me/+971503343786?text=Hi,%20I%20Need%20a%20Quote(From%20Website)">
+            <button class="bg-[#26ca43] hover:bg-white hover:text-[#26ca43] text-white font-bold py-2 px-4 rounded-full shadow-lg">
+                Get a Quote on <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </button>
+        </a>
     </div>
   
 </body>
