@@ -6,7 +6,7 @@ module.exports = {
     './static/**/*.{html,js}',
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'selector', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({
       ...theme('colors'),
