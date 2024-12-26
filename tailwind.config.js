@@ -8,6 +8,7 @@ module.exports = {
   presets: [],
   darkMode: 'selector', // or 'class'
   theme: {
+    extend: {},
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
@@ -1065,6 +1066,8 @@ module.exports = {
       50: '50',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
 

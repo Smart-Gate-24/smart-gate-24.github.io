@@ -127,11 +127,22 @@
             </div>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/services">Services</a>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
                 <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/contact">Contact Us</a>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/clients">Clients</a>
             </div>
         </div>
         <div class="text-2xl relative right-0 flex-1">
             <div class="user-contents absolute right-0">
+                <span class="font-mono" id="dark_mode_tut">Dark Mode-></span>
+                <input type="hidden" id="dark_mode_toggle" value=1>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="#" onclick="toggleDark()"><i class="fa fa-lightbulb-o"></i></a>
                 <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
                 <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
                 <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
@@ -309,9 +320,19 @@
       <!-- Owl Carousel -->
       <script src="static/js/owl.carousel.min.js"></script>
       
+    <!-- Custom Javascript Functions -->
+    <script src="/static/js/src.js"></script>
+      
       <script>
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel();
+            var DarkMode = localStorage.getItem("darkMode");
+            if(DarkMode == "1"){
+                enableDark();
+            }else{
+                localStorage.setItem("darkMode", "0");
+                
+            }
         });
     
         $('.owl-carousel').owlCarousel({

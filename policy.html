@@ -51,7 +51,7 @@
   gtag('config', 'G-1P0SSZ9FMJ');
 </script>
 
-<body>
+<body class="bg-gray-200 dark:bg-gray-800 dark:text-gray-200">
 
     <div class="flex flex-row w-full shadow items-center pb-2 pt-2 px-8 bg-white dark:bg-gray-900">
         <div>
@@ -119,11 +119,22 @@
             </div>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/services">Services</a>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
                 <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/contact">Contact Us</a>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/clients">Clients</a>
             </div>
         </div>
         <div class="text-2xl relative right-0 flex-1">
             <div class="user-contents absolute right-0">
+                <span class="font-mono" id="dark_mode_tut">Dark Mode-></span>
+                <input type="hidden" id="dark_mode_toggle" value=1>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="#" onclick="toggleDark()"><i class="fa fa-lightbulb-o"></i></a>
                 <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
                 <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
                 <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
@@ -152,5 +163,20 @@
         </a>
     </div>
   
+  <!-- Custom Javascript Functions -->
+  <script src="/static/js/src.js"></script>
+  
+  <script>
+    
+    window.onload = (event) => {
+        var DarkMode = localStorage.getItem("darkMode");
+        if(DarkMode == "1"){
+            enableDark();
+        }else{
+            localStorage.setItem("darkMode", "0");
+            
+        }
+    };
+</script>
 </body>
 </html>

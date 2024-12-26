@@ -13,8 +13,6 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="/static/css/tailwind.css">
       <!-- Responsive-->
@@ -30,7 +28,7 @@
       <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
-   <body>
+   <body class="bg-gray-200 dark:bg-gray-800 dark:text-gray-200">
 
       <div class="flex flex-row w-full shadow items-center pb-2 pt-2 px-8 bg-white dark:bg-gray-900">
           <div>
@@ -103,6 +101,9 @@
           </div>
           <div class="text-2xl relative right-0 flex-1">
               <div class="user-contents absolute right-0">
+               <span class="font-mono" id="dark_mode_tut">Dark Mode-></span>
+               <input type="hidden" id="dark_mode_toggle" value=1>
+               <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="#" onclick="toggleDark()"><i class="fa fa-lightbulb-o"></i></a>
                   <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
                   <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
                   <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
@@ -228,10 +229,11 @@
          <p class="copyright_text">Copyright 2020 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
       </div>
       <!-- copyright section end -->
+      <!-- Custom Javascript Functions -->
+      <script src="/static/js/src.js"></script>
       <!-- Javascript files-->
       <script src="/static/js/jquery.min.js"></script>
       <script src="/static/js/popper.min.js"></script>
-      <script src="/static/js/bootstrap.bundle.min.js"></script>
       <script src="/static/js/jquery-3.0.0.min.js"></script>
       <script src="/static/js/plugin.js"></script>
       <!-- sidebar -->
@@ -255,6 +257,13 @@
             $(this).removeClass('transition');
             });
             });
+            var DarkMode = localStorage.getItem("darkMode");
+            if(DarkMode == "1"){
+                enableDark();
+            }else{
+                localStorage.setItem("darkMode", "0");
+                
+            }
             
       </script> 
       <script>
