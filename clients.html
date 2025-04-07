@@ -34,107 +34,188 @@
     </head>
     <body class="bg-gray-200 dark:bg-gray-800 dark:text-gray-200">
 
-        <div class="flex flex-row w-full shadow items-center pb-2 pt-2 px-8 bg-white dark:bg-gray-900">
-            <div>
-                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/"><img style="width: 320px; " src="/static/images/Logo Artboard v3 dark.png"></a>
-            </div>
-            <div class="shadow-sm text-left justify-evenly text-gray-900 dark:text-sg-blue flex flex-row transition-all">
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                <div>
-                    <a class="font-mono rounded-lg px-3 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red" href="/">Home</a>
-                </div>
-                <span class="z-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                <div>
-                    <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/about">About Us</a>
-                </div>
-                <span class="z-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <!-- Nav Bar -->
+      <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600" style="z-index: 100000000;">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/static/images/Logo Artboard v3 dark.png" class="h-14" alt="Smart Gate bldng Logo">
+            <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Smart Gate Building Materials</span> -->
+          </a>
+  
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="/about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li>
                 <div class="group">
-                    <a class='font-mono rounded-lg px-3 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red transition-all' href="/products">Products <span class="text-xs"><i class="hover:animate-bounce fa fa-arrow-down"></i></span></a>
-                    <div class="scale-0 mt-2 opacity-90 transition-all ease-in-out delay-200 rounded-lg bg-gray-100 group-hover:scale-100 w-1/2 min-h-80 z-10 absolute -m-80">
-                        
-                        <div class="px-4 text-gray-800">
-                            <h3>Tools</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Hand Tools</li>
-                                <li>Power Tools</li>
-                                <li>Accessories</li>
-                            </ul>
-                            <h3>Electrical Supplies</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Wiring and Cables</li>
-                                <li>Switches and Sockets</li>
-                                <li>Lighting Solutions</li>
-                            </ul>
-                            <h3>Plumbing Gear</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Pipes and Fittings</li>
-                                <li>Valves and Faucets</li>
-                                <li>Plumbing Accessories</li>
-                            </ul>
-                            <h3>Construction Materials</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Cement and Concrete</li>
-                                <li>Bricks and Blocks</li>
-                                <li>Insulation Materials</li>
-                            </ul>
-                            <h3>Hardware</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Fasteners</li>
-                                <li>Hinges and Locks</li>
-                                <li>Building Hardware</li>
-                            </ul>
-                            <h3>Sanitary Products</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Bathroom Fixtures</li>
-                                <li>Sanitary Ware</li>
-                                <li>Plumbing Accessories</li>
-                            </ul>
-                            <h3>Tiles</h3>
-                            <ul class="list-disc list-inside">
-                                <li>Floor Tiles</li>
-                                <li>Wall Tiles</li>
-                                <li>Decorative Tiles</li>
-                            </ul>
-                        </div>
+                  <a class='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all'
+                    href="/products">Products <span class="text-xs"><i class="hover:animate-bounce fa fa-arrow-down"></i></span></a>
+                  <div
+                    class="scale-0 mt-2 opacity-90 transition-all ease-in-out delay-200 rounded-lg bg-gray-100 group-hover:scale-100 w-1/2 min-h-80 z-10 absolute -m-80">
+                
+                    <div class="px-4 text-gray-800">
+                      <h3>Tools</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Hand Tools</li>
+                        <li>Power Tools</li>
+                        <li>Accessories</li>
+                      </ul>
+                      <h3>Electrical Supplies</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Wiring and Cables</li>
+                        <li>Switches and Sockets</li>
+                        <li>Lighting Solutions</li>
+                      </ul>
+                      <h3>Plumbing Gear</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Pipes and Fittings</li>
+                        <li>Valves and Faucets</li>
+                        <li>Plumbing Accessories</li>
+                      </ul>
+                      <h3>Construction Materials</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Cement and Concrete</li>
+                        <li>Bricks and Blocks</li>
+                        <li>Insulation Materials</li>
+                      </ul>
+                      <h3>Hardware</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Fasteners</li>
+                        <li>Hinges and Locks</li>
+                        <li>Building Hardware</li>
+                      </ul>
+                      <h3>Sanitary Products</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Bathroom Fixtures</li>
+                        <li>Sanitary Ware</li>
+                        <li>Plumbing Accessories</li>
+                      </ul>
+                      <h3>Tiles</h3>
+                      <ul class="list-disc list-inside">
+                        <li>Floor Tiles</li>
+                        <li>Wall Tiles</li>
+                        <li>Decorative Tiles</li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <div>
-                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/services">Services</a>
+                <!-- <a href="/products" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Products</a> -->
+              </li>
+              <li>
+                <a href="/services" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              </li>
+              <li>
+                <a href="/contacts" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+              <li>
+                <a href="clients" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Clients</a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"> -->
+          
+          <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+              <i class="fa fa-language" aria-hidden="true"></i>
+              language
+            </button>
+            <!-- Dropdown -->
+            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
+              <ul class="py-2 font-medium" role="none">
+                <li>
+                  <button onclick="translatePage('en')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                      English (US)
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="translatePage('ar')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve" class="h-3.5 w-3.5 rounded-full me-2">
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                          <path d="M 2.57 30 l 84.859 0 C 81.254 12.534 64.611 0.015 45.033 0 l -0.068 0 C 25.388 0.015 8.745 12.534 2.57 30 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,111,46); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 87.429 60 L 2.57 60 C 8.749 77.476 25.408 90 45 90 S 81.25 77.476 87.429 60 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 87.429 60 C 89.088 55.307 90 50.261 90 45 c 0 -5.261 -0.911 -10.307 -2.571 -15 L 2.57 30 C 0.911 34.693 0 39.739 0 45 c 0 5.261 0.912 10.307 2.571 15 L 87.429 60 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 30 87.429 l 0 -84.858 C 12.524 8.75 0 25.408 0 45 S 12.524 81.25 30 87.429 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(247,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                        </g>
+                        </svg>
+                      عربي
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="translatePage('hi')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve" class="h-3.5 w-3.5 rounded-full me-2">
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                          <path d="M 2.571 30 l 84.859 0 C 81.254 12.534 64.611 0.015 45.034 0 l -0.068 0 C 25.389 0.015 8.745 12.534 2.571 30 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,153,51); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 87.429 60 L 2.571 60 C 8.75 77.476 25.408 90 45 90 S 81.25 77.476 87.429 60 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(18,136,7); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 87.429 60 C 89.088 55.307 90 50.261 90 45 c 0 -5.261 -0.911 -10.307 -2.571 -15 L 2.571 30 C 0.911 34.693 0 39.739 0 45 c 0 5.261 0.912 10.308 2.571 15 L 87.429 60 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 45 32.5 c -6.904 0 -12.5 5.596 -12.5 12.5 c 0 6.904 5.596 12.5 12.5 12.5 c 6.904 0 12.5 -5.596 12.5 -12.5 C 57.5 38.096 51.904 32.5 45 32.5 z M 54.885 40.315 c -0.271 0.12 -0.399 0.433 -0.285 0.709 c 0.114 0.275 0.426 0.407 0.702 0.3 c 0.099 0.277 0.186 0.559 0.263 0.846 l -6.436 1.336 l -2.048 0.821 c -0.036 -0.111 -0.081 -0.218 -0.134 -0.321 l 2.03 -0.868 l 5.495 -3.605 C 54.619 39.787 54.758 40.048 54.885 40.315 z M 51.217 36.003 c -0.173 0.239 -0.127 0.573 0.109 0.754 c 0.235 0.181 0.57 0.139 0.756 -0.089 c 0.225 0.191 0.444 0.39 0.653 0.599 c 0.209 0.209 0.407 0.428 0.599 0.653 c -0.228 0.186 -0.27 0.52 -0.089 0.756 c 0.181 0.236 0.515 0.282 0.754 0.109 c 0.168 0.242 0.325 0.492 0.473 0.748 l -5.87 2.956 l -1.767 1.324 c -0.063 -0.098 -0.135 -0.189 -0.213 -0.275 l 1.737 -1.365 l 4.375 -4.906 l -4.906 4.375 l -1.365 1.737 c -0.086 -0.078 -0.178 -0.149 -0.275 -0.213 l 1.324 -1.767 l 2.956 -5.87 C 50.724 35.677 50.974 35.835 51.217 36.003 z M 48.976 35.4 c 0.275 0.114 0.589 -0.014 0.709 -0.285 c 0.268 0.127 0.528 0.266 0.783 0.414 l -3.605 5.495 l -0.868 2.03 c -0.103 -0.053 -0.21 -0.098 -0.321 -0.134 l 0.821 -2.048 l 1.336 -6.436 c 0.287 0.076 0.569 0.164 0.846 0.263 C 48.57 34.974 48.701 35.286 48.976 35.4 z M 43.644 34.698 c 0.294 -0.039 0.501 -0.304 0.471 -0.597 c 0.292 -0.023 0.587 -0.039 0.885 -0.039 s 0.593 0.015 0.885 0.039 c -0.03 0.293 0.177 0.558 0.471 0.597 c 0.294 0.039 0.563 -0.165 0.61 -0.456 c 0.292 0.053 0.581 0.118 0.864 0.193 l -2.061 6.242 l -0.313 2.184 c -0.112 -0.024 -0.228 -0.037 -0.345 -0.043 l 0.263 -2.193 L 45 34.063 l -0.375 6.563 l 0.263 2.193 c -0.118 0.006 -0.233 0.019 -0.345 0.043 l -0.313 -2.184 l -2.061 -6.242 c 0.284 -0.075 0.572 -0.14 0.864 -0.193 C 43.08 34.533 43.349 34.737 43.644 34.698 z M 40.315 35.115 c 0.12 0.271 0.434 0.399 0.709 0.285 c 0.275 -0.114 0.407 -0.426 0.3 -0.702 c 0.277 -0.099 0.559 -0.186 0.846 -0.263 l 1.336 6.436 l 0.821 2.048 c -0.111 0.036 -0.218 0.081 -0.321 0.134 l -0.868 -2.03 l -3.605 -5.495 C 39.787 35.381 40.048 35.242 40.315 35.115 z M 36.003 38.783 c 0.239 0.173 0.573 0.127 0.754 -0.109 c 0.181 -0.235 0.139 -0.57 -0.089 -0.756 c 0.191 -0.225 0.39 -0.444 0.599 -0.653 c 0.209 -0.209 0.428 -0.407 0.653 -0.599 c 0.186 0.228 0.52 0.27 0.756 0.089 c 0.236 -0.181 0.282 -0.515 0.109 -0.754 c 0.242 -0.168 0.492 -0.325 0.748 -0.473 l 2.956 5.87 l 1.324 1.767 c -0.098 0.063 -0.189 0.135 -0.275 0.213 l -1.365 -1.737 l -4.906 -4.375 l 4.375 4.906 l 1.737 1.365 c -0.078 0.086 -0.149 0.178 -0.213 0.275 l -1.767 -1.324 l -5.87 -2.956 C 35.677 39.276 35.835 39.026 36.003 38.783 z M 35.118 49.684 c 0.269 -0.12 0.396 -0.433 0.282 -0.707 c -0.114 -0.275 -0.425 -0.406 -0.701 -0.3 c -0.197 -0.551 -0.351 -1.122 -0.458 -1.71 c 0.292 -0.046 0.496 -0.316 0.457 -0.61 c -0.039 -0.294 -0.305 -0.502 -0.599 -0.471 c -0.024 -0.292 -0.037 -0.587 -0.037 -0.885 c 0 -0.298 0.013 -0.593 0.037 -0.885 c 0.294 0.031 0.56 -0.177 0.599 -0.471 c 0.039 -0.295 -0.165 -0.564 -0.457 -0.61 c 0.107 -0.588 0.261 -1.159 0.458 -1.71 c 0.276 0.106 0.587 -0.026 0.701 -0.3 c 0.114 -0.274 -0.013 -0.587 -0.282 -0.707 c 0.127 -0.267 0.264 -0.53 0.411 -0.784 l 5.495 3.605 l 2.03 0.868 c -0.053 0.103 -0.098 0.21 -0.134 0.321 l -2.048 -0.821 l -6.436 -1.336 l 6.242 2.061 l 2.184 0.313 c -0.024 0.112 -0.037 0.228 -0.043 0.345 l -2.193 -0.263 L 34.063 45 l 6.563 0.375 l 2.193 -0.263 c 0.006 0.118 0.019 0.233 0.043 0.345 l -2.184 0.313 l -6.242 2.061 l 6.436 -1.336 l 2.048 -0.821 c 0.036 0.111 0.081 0.218 0.134 0.321 l -2.03 0.868 l -5.495 3.605 C 35.381 50.213 35.245 49.951 35.118 49.684 z M 38.783 53.997 c 0.173 -0.239 0.127 -0.573 -0.109 -0.754 c -0.235 -0.181 -0.57 -0.139 -0.756 0.089 c -0.225 -0.191 -0.444 -0.39 -0.653 -0.599 c -0.209 -0.209 -0.407 -0.428 -0.599 -0.653 c 0.228 -0.186 0.27 -0.52 0.089 -0.756 c -0.181 -0.236 -0.515 -0.282 -0.754 -0.109 c -0.168 -0.242 -0.325 -0.492 -0.473 -0.748 l 5.87 -2.956 l 1.767 -1.324 c 0.063 0.098 0.135 0.189 0.213 0.275 l -1.737 1.365 l -4.375 4.906 l 4.906 -4.375 l 1.365 -1.737 c 0.086 0.078 0.178 0.149 0.275 0.213 l -1.324 1.767 l -2.956 5.87 C 39.276 54.323 39.026 54.165 38.783 53.997 z M 46.356 55.302 c -0.294 0.039 -0.501 0.304 -0.471 0.597 c -0.292 0.023 -0.587 0.039 -0.885 0.039 c -0.298 0 -0.593 -0.015 -0.885 -0.039 c 0.03 -0.293 -0.177 -0.558 -0.471 -0.597 c -0.294 -0.039 -0.563 0.165 -0.61 0.456 c -0.588 -0.107 -1.159 -0.259 -1.71 -0.456 c 0.107 -0.276 -0.025 -0.589 -0.3 -0.702 c -0.275 -0.114 -0.589 0.014 -0.709 0.285 c -0.268 -0.127 -0.528 -0.266 -0.783 -0.414 l 3.605 -5.495 l 0.868 -2.03 c 0.103 0.053 0.21 0.098 0.321 0.134 l -0.821 2.048 l -1.336 6.436 l 2.061 -6.242 l 0.313 -2.184 c 0.112 0.024 0.228 0.037 0.345 0.043 l -0.263 2.193 L 45 55.938 l 0.375 -6.562 l -0.263 -2.193 c 0.118 -0.006 0.233 -0.019 0.345 -0.043 l 0.313 2.184 l 2.061 6.242 c -0.284 0.075 -0.572 0.14 -0.864 0.193 C 46.92 55.467 46.651 55.263 46.356 55.302 z M 49.685 54.885 c -0.12 -0.271 -0.434 -0.399 -0.709 -0.285 c -0.275 0.114 -0.407 0.426 -0.3 0.702 c -0.277 0.099 -0.559 0.186 -0.846 0.263 l -1.336 -6.436 l -0.821 -2.048 c 0.111 -0.036 0.218 -0.081 0.321 -0.134 l 0.868 2.03 l 3.605 5.495 C 50.213 54.619 49.952 54.758 49.685 54.885 z M 53.997 51.217 c -0.239 -0.173 -0.573 -0.127 -0.754 0.109 c -0.181 0.235 -0.139 0.57 0.089 0.756 c -0.191 0.225 -0.39 0.444 -0.599 0.653 c -0.209 0.209 -0.428 0.407 -0.653 0.599 c -0.186 -0.228 -0.52 -0.27 -0.756 -0.089 c -0.236 0.181 -0.282 0.515 -0.109 0.754 c -0.242 0.168 -0.492 0.325 -0.748 0.473 l -2.956 -5.87 l -1.324 -1.767 c 0.098 -0.063 0.189 -0.135 0.275 -0.213 l 1.365 1.737 l 4.906 4.375 l -4.375 -4.906 l -1.737 -1.365 c 0.078 -0.086 0.149 -0.178 0.213 -0.275 l 1.767 1.324 l 5.87 2.956 C 54.323 50.724 54.165 50.974 53.997 51.217 z M 54.6 48.976 c -0.114 0.275 0.014 0.589 0.285 0.709 c -0.127 0.268 -0.266 0.528 -0.414 0.783 l -5.495 -3.605 l -2.03 -0.868 c 0.053 -0.103 0.098 -0.21 0.134 -0.321 l 2.048 0.821 l 6.436 1.336 c -0.076 0.287 -0.164 0.569 -0.263 0.846 C 55.026 48.57 54.714 48.701 54.6 48.976 z M 55.302 46.356 c -0.039 0.294 0.165 0.563 0.456 0.61 c -0.053 0.292 -0.118 0.581 -0.193 0.864 l -6.242 -2.061 l -2.184 -0.313 c 0.024 -0.112 0.037 -0.228 0.043 -0.345 l 2.193 0.263 L 55.938 45 l -6.562 -0.375 l -2.193 0.263 c -0.006 -0.118 -0.019 -0.233 -0.043 -0.345 l 2.184 -0.313 l 6.242 -2.061 c 0.075 0.284 0.14 0.572 0.193 0.864 c -0.291 0.047 -0.495 0.316 -0.456 0.61 c 0.039 0.294 0.304 0.501 0.597 0.471 c 0.023 0.292 0.039 0.587 0.039 0.885 c 0 0.298 -0.015 0.593 -0.039 0.885 C 55.606 45.855 55.34 46.062 55.302 46.356 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,136); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                        </g>
+                      </svg>
+                      हिन्दी
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="translatePage('nl')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                      Deutsch
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="translatePage('it')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                      Italiano
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="translatePage('zh-CN')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                      中文 (繁體)
+                    </div>
+                  </button>
+                </li>
+              </ul>
             </div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <div>
-                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold hover:text-sg-blue hover:shadow outline outline-gray-400 hover:outline-sg-red' href="/contact">Contact Us</a>
-            </div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <div>
-                <a class='-mx-4 font-mono rounded-lg px-4 py-2 text-base font-semibold text-sg-blue shadow outline outline-sg-red' href="/clients">Clients</a>
-            </div>
-            </div>
-            <div class="text-2xl relative right-0 flex-1">
-                <div class="user-contents absolute right-0">
-                    <span class="font-mono" id="dark_mode_tut">Dark Mode-></span>
-                    <input type="hidden" id="dark_mode_toggle" value=1>
-                    <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="#" onclick="toggleDark()"><i class="fa fa-lightbulb-o"></i></a>
-                    <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
-                    <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
-                    <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
-                    <span>&nbsp;</span>
-                    <span>&nbsp;</span>
-                    <span class="absolute -top-0.5 right-3 bg-sg-blue text-white text-xs text-center w-4 h-4 rounded-full">0</span>
-                </div>
+            <!-- <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button> -->
+              <div class="user-contents absolute right-0">
+                <span class="font-mono" id="dark_mode_tut">Dark Mode-></span>
+                <input type="hidden" id="dark_mode_toggle" value=1>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="#" onclick="toggleDark()"><i class="fa fa-lightbulb-o"></i></a>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/profile"><i class="fa fa-user"></i></a>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/wishlist"><i class="fa fa-heart"></i></a>
+                <a class='text-sky-600 hover:text-sg-blue visited:text-purple-600' href="/cart"><i class="fa fa-shopping-cart"></i></a>
                 <span>&nbsp;</span>
                 <span>&nbsp;</span>
+                <span class="absolute -top-0.5 right-3 bg-sg-blue text-white text-xs text-center w-4 h-4 rounded-full">0</span>
             </div>
-            
-            <div class="text-sm absolute -right-0 w-7">
-                <button onclick="translatePage('en')"><i class="fi fi-us"></i></button>
-                <button onclick="translatePage('ar')"><i class="fi fi-ae"></i></button>
-                <button onclick="translatePage('hi')"><i class="fi fi-in"></i></button>
-            </div>
-            <div hidden id="google_translate_element"></div>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
         </div>
-    
+          <div hidden id="google_translate_element"></div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
         <!-- Floating Whatsapp -->
         <div class="fixed z-20 top-1/2 right-4 -translate-y-1/2">
             <a href="https://wa.me/+971503343786?text=Hi,%20I%20Need%20a%20Quote(From%20Website)">
